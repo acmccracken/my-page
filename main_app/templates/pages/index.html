@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>My Page</h1>
+
+{% for page in pages %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ page.title }}</span>
+      <p>Post: {{ page.post }}</p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
