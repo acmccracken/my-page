@@ -7,7 +7,10 @@
   <div class="card-content">
     <span class="card-title">{{ page.title }}</span>
     <p>Post: {{ page.post }}</p>
-    
+  </div>
+  <div class="card-action">
+    <a href="{% url 'pages_update' page.id %}">Edit</a>
+    <a href="{% url 'pages_delete' page.id %}">Delete</a>
   </div>
 </div>
 
